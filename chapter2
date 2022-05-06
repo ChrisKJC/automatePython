@@ -98,6 +98,9 @@ range(0, 10, 1) will give same result as above however explicitly states the ste
 for i in range(1, 11):
     print(i)
     
+while spam < 11:
+    print(spam)
+    spam += 1
 
 
 14. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
