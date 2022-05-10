@@ -1,0 +1,18 @@
+def collatz(number):
+    if number % 2 == 0:
+        print(number // 2)
+        return number // 2
+
+    elif number % 2 == 1:
+        odd = 3 * number + 1
+        print(odd)
+        return odd
+
+try:
+    guess = int(input("Enter number: "))
+
+except:
+    print("please type an integer")
+
+while guess != 1:
+    guess = collatz(guess)
