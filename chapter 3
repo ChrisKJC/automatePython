@@ -1,27 +1,56 @@
 1. Why are functions advantageous to have in your programs?
 
+Allow you to have blocks of code that can be called multiple times without having to rewrite the same block of code again further into a program.
+
 2. When does the code in a function execute: when the function is defined or when the function is called?
+
+The code in the function only runs when called
 
 3. What statement creates a function?
 
+def followed by the name for the function and close parentheses with colon at the end 
+e.g def function():
+
 4. What is the difference between a function and a function call?
+
+a function contains the block of code to be executed when called. it is first defined in the program before it is called (as many times as needed)
+a function call is what executes the block of code and passes arguments into the functions parameters.
 
 5. How many global scopes are there in a Python program? How many local scopes?
 
+There is one global scope which can be accessed by any code blocks in the program.
+There are as many local scopes as there are functions.
+
 6. What happens to variables in a local scope when the function call returns?
 
+They are removed from memory
+
 7. What is a return value? Can a return value be part of an expression?
+
+a return value is what a return statement evaluates to. a return value could be allocated to a variable and used in an expression or as part of a function call
 
 8. If a function does not have a return statement, what is the return value of a call to that function?
 
 9. How can you force a variable in a function to refer to the global variable?
 
+use the global statement
+
 10. What is the data type of None?
+
+a nontype
 
 11. What does the import areallyourpetsnamederic statement do?
 
+includes the areallyourpetsnamederic module
+
 12. If you had a function named bacon() in a module named spam, how would you call it after importing spam?
+
+spam.bacon()
 
 13. How can you prevent a program from crashing when it gets an error?
 
+use try and except clause 
+
 14. What goes in the try clause? What goes in the except clause?
+
+the try clause is for code to execute. if an error occurs executing this it will run the except clause. if not it will continue through the program and skip the except clasue
