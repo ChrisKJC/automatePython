@@ -32,6 +32,8 @@ For the following three questions, let’s say bacon contains the list [3.14, 'c
 
 8. What does bacon.remove('cat') make the list value in bacon look like?
 
+[3.14, 'cat', 11, True]
+
 9. What are the operators for list concatenation and list replication?
 
 +
@@ -49,6 +51,10 @@ remove()
 
 12. Name a few ways that list values are similar to string values.
 
+can be concatinated and duplicated (+ and *) 
+can be used in for loop to cycle through items (chars in strings)
+can use indexing
+
 13. What is the difference between lists and tuples?
 
 lists are mutable
@@ -56,10 +62,18 @@ tuples are immutable
 
 14. How do you type the tuple value that has just the integer value 42 in it?
 
+(42,)
+
 15. How can you get the tuple form of a list value? How can you get the list form of a tuple value?
+
+tuple()
+list()
 
 16. Variables that “contain” list values don’t actually contain lists directly. What do they contain instead?
 
 a reference to the list ID
 
 17. What is the difference between copy.copy() and copy.deepcopy()?
+
+copy.copy() will copy a list but give a new id so it can be changed independantly from the original list
+copy.deepcopy() does the same but will also copy lists nested within lists
