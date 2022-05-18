@@ -10,13 +10,15 @@ For the following three questions, let’s say spam contains the list ['a', 'b',
 
 3. What does spam[int(int('3' * 2) // 11)] evaluate to?
 
+d
+
 4. What does spam[-1] evaluate to?
 
 d
 
 5. What does spam[:2] evaluate to?
 
-c
+a, b
 
 For the following three questions, let’s say bacon contains the list [3.14, 'cat', 11, 'cat', True].
 
@@ -32,8 +34,8 @@ For the following three questions, let’s say bacon contains the list [3.14, 'c
 
 9. What are the operators for list concatenation and list replication?
 
-+=
-*=
++
+*
 
 10. What is the difference between the append() and insert() list methods?
 
