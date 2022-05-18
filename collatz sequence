@@ -1,3 +1,16 @@
+valid_input = False
+
+while valid_input != True: 
+
+    try:
+        guess = int(input("Enter number: "))
+
+    except:
+        print("please type an integer")
+
+    else:
+        valid_input = True
+    
 def collatz(number):
     if number % 2 == 0:
         print(number // 2)
@@ -7,12 +20,6 @@ def collatz(number):
         odd = 3 * number + 1
         print(odd)
         return odd
-
-try:
-    guess = int(input("Enter number: "))
-
-except:
-    print("please type an integer")
 
 while guess != 1:
     guess = collatz(guess)
