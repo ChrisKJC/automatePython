@@ -1,0 +1,13 @@
+spam = ['apples', 'bananas', 'tofu', 'cats']
+       
+item_list = ''
+
+for item in range(len(spam)):
+    
+    if item < len(spam)- 1:
+        item_list += spam[item]+ ', '
+
+    else:
+        item_list += 'and ' + spam[item]
+
+print(item_list)
