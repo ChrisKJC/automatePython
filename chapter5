@@ -12,11 +12,15 @@ Lists are ordered and can be sliced using an index. Dictionarys are unordered an
 
 4. What happens if you try to access spam['foo'] if spam is {'bar': 100}?
 
-
+there would be a key error as this key does not exist in the dictionary spam
 
 5. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.keys()?
 
+It should be the same thing as 'in' will look at the leys in a dictionary the same as explicitly stating in spam.keys()
+
 6. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.values()?
+
+the spam.values() will look for 'cat' in values and not the keys
 
 7. What is a shortcut for the following code?
 
