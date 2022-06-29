@@ -26,5 +26,10 @@ the spam.values() will look for 'cat' in values and not the keys
 
 if 'color' not in spam:
     spam['color'] = 'black'
+    
+spam.setdefault('color', 'black')
 
 8. What module and function can be used to “pretty print” dictionary values?
+
+import pprint
+pprint.pprint()
