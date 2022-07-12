@@ -17,18 +17,31 @@ you can write using a multiline string with """  """
 6. What do the following expressions evaluate to?
 
 'Hello, world!'[1]
+e
 'Hello, world!'[0:5]
+Hello
 'Hello, world!'[:5]
+Hello
 'Hello, world!'[3:]
+lo, world!
+
 7. What do the following expressions evaluate to?
 
 'Hello'.upper()
+HELLO
 'Hello'.upper().isupper()
+True
 'Hello'.upper().lower()
+hello
+
 8. What do the following expressions evaluate to?
 
 'Remember, remember, the fifth of November.'.split()
-'-'.join('There can be only one.'.split())
-9. What string methods can you use to right-justify, left-justify, and center a string?
 
+'-'.join('There can be only one.'.split())
+
+9. What string methods can you use to right-justify, left-justify, and center a string?
+rjust()   ljust()   center()
 10. How can you trim whitespace characters from the beginning or end of a string?
+
+lstrip() from beginning and rstrip() from end
