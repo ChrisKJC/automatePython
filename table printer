@@ -1,0 +1,15 @@
+tableData = [['apples', 'oranges', 'cherries', 'banana'],
+             ['Alice', 'Bob', 'Carol', 'David'],
+             ['dogs', 'cats', 'moose', 'goose']]
+
+def printTable(table):
+    colWidths = [0]*len(table)
+    #print(colWidths)
+    for item in range(len(table[0])):
+        for value in range(len(table)):
+            print(tableData[value][item], end=' ')
+
+        print()
+    
+
+printTable(tableData)
