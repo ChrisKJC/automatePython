@@ -4,10 +4,14 @@ tableData = [['apples', 'oranges', 'cherries', 'banana'],
 
 def printTable(table):
     colWidths = [0]*len(table)
-    #print(colWidths)
+    
+    for i in range(len(colWidths)):
+      colWidths[i] = len(max(table[i], key=len))
+    
+    
     for item in range(len(table[0])):
-        for value in range(len(table)):
-            print(tableData[value][item], end=' ')
+        for value in range(len(colWidths)):
+            print(tableData[value][item].rjust(colWidths[value]), end=' ')
 
         print()
     
