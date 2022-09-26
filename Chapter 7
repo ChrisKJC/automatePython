@@ -37,9 +37,18 @@ pipe is equal to an or expression
 
 9. What two things does the ? character signify in regular expressions?
 
+optional matches if parenthese before eg. (weqweqw)? it can occur once or not at all and still allow a match if other parts match
+also allows non greedy matches to be used with {} expressions which means it matches the lowest matching stings not the highest by default
+
 10. What is the difference between the + and * characters in regular expressions?
 
+* is match 0 or more
++ is match 1 or more so at least one occurance is required for the string to match
+
 11. What is the difference between {3} and {3,5} in regular expressions?
+
+{3} would need to match 3 instances of a given string no more, no less e.g (ha){3} would only match with hahaha
+{3.5} works as a min and max value so in above example it would accept hahaha as a minimum and up to hahahahaha (ha five times)
 
 12. What do the \d, \w, and \s shorthand character classes signify in regular expressions?
 
