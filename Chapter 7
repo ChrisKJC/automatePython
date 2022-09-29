@@ -52,19 +52,41 @@ also allows non greedy matches to be used with {} expressions which means it mat
 
 12. What do the \d, \w, and \s shorthand character classes signify in regular expressions?
 
+/d looks for a digit from 0 to 9
+/w looks for a word which can be a letter, digit or underscore character
+/s looks for spaces tabs and newlines
+
+
 13. What do the \D, \W, and \S shorthand character classes signify in regular expressions?
+
+Looks for the opposite of the lowercase shorthands i.e /S is for things that ARE NOT a space, tab or newline
 
 14. What is the difference between .* and .*??
 
+.* is match anything in that part of the string e.g firstname: .* could return Firstname: Al if thats the input. It will not match spaces
+.*? is the non greedy version of the above
+
+
 15. What is the character class syntax to match all numbers and lowercase letters?
+
+re.compile (r'[a-zA-Z0-9]')
 
 16. How do you make a regular expression case-insensitive?
 
+in the re.complile() add re.I or re.IGNORECASE after the raw string (but still within the brackets of the compile)
+
 17. What does the . character normally match? What does it match if re.DOTALL is passed as the second argument to re.compile()?
+
+. normall matches all but spaces
+re.DOTALL includes spaces
 
 18. If numRegex = re.compile(r'\d+'), what will numRegex.sub('X', '12 drummers, 11 pipers, five rings, 3 hens') return?
 
+X drummers, X pipers, five rings, X hens
+
 19. What does passing re.VERBOSE as the second argument to re.compile() allow you to do?
+
+it would allow the inclusion of whitespace 
 
 20. How would you write a regex that matches a number with commas for every three digits? It must match the following:
 
